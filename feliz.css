@@ -2,45 +2,48 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
+:root{
+    --cor1:#30A9D9;
+    --cor2:#e2eaf8;
+    --cor3:#0f3070;
+    --cor4:#353d6d;
+    --cor5:#010326;
+    --cor6:#A4A6A5;
+    --cor7:#5a5d5c;
+    --cor8:#1286129b;
+} 
 
 body, html{
     margin: 0;
     padding: 0;
 }
 
-:root {
-    --color1:#17696D;
-    --color2:#097B73;
-    --color3:#2E8C80;
-    --color4:#619A82;
-    --color5:#B0BC96;
-    --color6:#26A690;
-    --color7:#2FBDA5;
-    --color8:#64E8D2;
-    --color9:#63DBC7;
-    --color10:#63D6C3;
-}
-
 header {
     display: flex;
-    background-color:#7C5E99;
-    border-bottom: 10px solid black;
+    background-color:var(--cor2);
+    border-bottom: 8px solid black;
     padding: 5px 10px;
     justify-content: space-between;
     align-items: center;
 }
 
-header img {
-    width: 70px;
-    height: 70px;
-    margin-left: 8px;
+h1#uni {
+    font: normal 400 3em 'Press Start 2P';
+    letter-spacing: 3px;
+    color:var(--cor3);
+    margin-left: 20px;
 }
 
-h1{
-    font-family:  'Press Start 2P', cursive;;
-    margin-left: 20px;
-    color: white;
-    text-shadow: 5px 5px 0px black;
+img#logoo {
+    margin-left:-600px;
+    width: 70px;
+    height: 70px;
+    transition: transform 600ms ease;
+}
+
+img#logoo:hover{
+    transform:scale(1.5) rotateX(10deg) rotateY(10deg) rotateZ(10deg)
+
 }
 
 nav {
@@ -51,20 +54,27 @@ nav ul li {
     display: inline-flex;
 }
 
-nav a {
+nav a.nava {
     display: inline-flex;
     align-items: center;
-    color:White;
-    font-size: 20px;
+    color:var(--cor5);
+    font-size: 24px;
     font-family: 'Fira Code', Arial, Helvetica, Sans-serif, Serif, Monospace;
     font-weight: 500;
     text-decoration: none;
     margin-right: 30px;
 }
 
-a::before{
+nav a.nava:hover {
+    background-color:#a4a6a552;
+    border-radius: 2px;
+    transition: .4s;
+    padding: 0.5px 0.5px;
+}
+
+a.nava::before{
     content: '';
-    background-color:#F25A70;
+    background-color:var(--cor7);
     width: 10px;
     height: 10px;
     margin-right: 10px;
@@ -73,19 +83,19 @@ a::before{
 
 .button {
     display:inline-block;
-    background-color: #F25A70;
+    background-color:var(--cor4);
+    margin-top: -4px;
     padding: 18px 20px;
     margin-right:10px;
     box-shadow: 5px 5px 0px black;
     color: white;
-    transition: transform 200ms cubic-bezier(0.42, 0, 0.75, 3.77), opacity 300ms cubic-bezier(0, 2.02, 1, 1);
+    transition: transform 300ms cubic-bezier(0.42, 0, 0.75, 3.77);
 }
 
 .button:hover {
-    background-color: var(--color4);
+    background-color:var(--cor8);
     color: white;
-    transform: scale(1.07);
-    opacity: 1.5;
+    transform: scale(1.07);    
 }
 
 main {
@@ -93,82 +103,87 @@ main {
     height: 2000px;
 }
 
-#section-banner-left{
+.section-banner-left{
     position: absolute;
     display: flex;
     background-color: white;
-    width:954px;
-    height: 797px;
-    top: 114px;
-    border-right: 5px solid black; 
+    width:100%;
+    top: 130px;
 }
 
-#section-banner-left > div {
+.section-banner-left img {
+    width: 1940px;
+    height: 1000px;
+    top: 140px;
+}
+    
+
+.section-banner-left > div {
+    display: inline-block;
     position: absolute;
-    background-color:#3A4042;
-    width:630px;
-    height:185px;
-    top:116px;
+    background-color:rgba(101, 106, 110, 0.235);
+    text-align: center;
+    padding: 28px 28px;
+    top:90px;
     left:91px;
-    filter:  drop-shadow(10px 10px 0px #000000);;   
+    filter:  drop-shadow(7px 7px 1px black);;   
 }
 
-#section-banner-right {
-    position: absolute;
-    background-color: white;
-    width: 389px;
-    height: 797px;
-    top: 114px;
-    left: 959px;
+.section-banner-left > div > h1 {
+    font:normal 500 38px 'Press Start 2P';
+    color:var(--cor2);
+    line-height: 30px;
+    width: 500px;
+    height: 40px;
+    padding: 4px;
+    text-shadow: 1.9px 1.9px 0px var(--cor3);
 }
 
-#cor1 {
-    position: absolute;
-    font:normal 400 40px 'Press Start 2P', cursive; ;
-    line-height: 40px;
-    text-shadow: 4px 4px 0px #000;
-    left: 50px;
-    top: -9px;
-    color:#F25A70;
-}
-
-#cor2 {
-    position: absolute;
-    font:normal 400 30px 'Press Start 2P', cursive; ;
-    color:whitesmoke;
-    text-shadow: 4px 4px 0px #000;
-    line-height: 40px;
-    left: 52px;
-    top: 70px;
+.section-banner-left > div > h2 {
+    font:normal 400 30px 'Press Start 2P';
+    color: var(--cor2);
+    line-height: 30px;
+    width: 540px;
+    height: 30px;
+    padding: 4px;
+    text-shadow: 4px 4px 0px var(--cor7);
 }
 
 #position1 {
-    font-size: 20px;
+    font-size: 21px;
     font-family: 'Fira Code', Arial, Helvetica, Sans-serif, Serif, Monospace;
     font-weight: 500;
     text-decoration: none;
     display:inline-block;
-    top: 345px;
+    top: 550px;
     left: 181px;
     width: 170px;
+    height: 42px;
+    line-height: 42px;
     position: absolute;
-    background-color: #F25A70;
+    background-color:#5eff5e40;
     text-align: center;
     margin-left: -37px;
+    color: white;
+    border-radius: 2px;
 }
 
 #position2 {
-    font-size: 20px;
+    font-size: 21px;
     font-family: 'Fira Code', Arial, Helvetica, Sans-serif, Serif, Monospace;
     font-weight: 500;
     text-decoration: none;
     display:inline-block;
-    top: 346px;
+    top: 551px;
     left: 463px;
     width: 170px;
     position: absolute; 
-    background-color: #F25A70;
+    background-color:#5ef65e3b;
+    height: 42px;
+    line-height: 42px;
     margin-left: -10px;
-    text-indent: 23px;
+    text-indent: 30px;
     display: flex;
+    color: white;
+    border-radius: 2px;
 }
