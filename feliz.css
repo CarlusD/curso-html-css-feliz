@@ -74,7 +74,7 @@ nav a.nava:hover {
 
 a.nava::before{
     content: '';
-    background-color:var(--cor7);
+    background-color:var(--cor4);
     width: 10px;
     height: 10px;
     margin-right: 10px;
@@ -130,7 +130,7 @@ main {
 }
 
 .section-banner-left > div > h1 {
-    font:normal 500 38px 'Press Start 2P';
+    font:normal 500 30px 'Press Start 2P';
     color:var(--cor2);
     line-height: 30px;
     width: 500px;
@@ -155,7 +155,7 @@ main {
     font-weight: 500;
     text-decoration: none;
     display:inline-block;
-    top: 550px;
+    top: 360px;
     left: 181px;
     width: 170px;
     height: 42px;
@@ -174,7 +174,7 @@ main {
     font-weight: 500;
     text-decoration: none;
     display:inline-block;
-    top: 551px;
+    top: 360px;
     left: 463px;
     width: 170px;
     position: absolute; 
