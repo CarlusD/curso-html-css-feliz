@@ -100,25 +100,26 @@ a.nava::before{
 
 main {
     width: 100%;
-    height: 2000px;
+    height: 5000px;
 }
 
-.section-banner-left{
+.section-banner{
     position: absolute;
     display: flex;
     background-color: white;
     width:100%;
     top: 130px;
+    border-bottom: 10px solid black;
 }
 
-.section-banner-left img {
-    width: 1940px;
-    height: 1000px;
+.section-banner img {
+    width:100%;
+    height: 800px;
     top: 140px;
 }
     
 
-.section-banner-left > div {
+.section-banner > div {
     display: inline-block;
     position: absolute;
     background-color:rgba(101, 106, 110, 0.235);
@@ -129,7 +130,7 @@ main {
     filter:  drop-shadow(7px 7px 1px black);;   
 }
 
-.section-banner-left > div > h1 {
+.section-banner > div > h1 {
     font:normal 500 30px 'Press Start 2P';
     color:var(--cor2);
     line-height: 30px;
@@ -139,7 +140,7 @@ main {
     text-shadow: 1.9px 1.9px 0px var(--cor3);
 }
 
-.section-banner-left > div > h2 {
+.section-banner > div > h2 {
     font:normal 400 30px 'Press Start 2P';
     color: var(--cor2);
     line-height: 30px;
@@ -175,7 +176,7 @@ main {
     text-decoration: none;
     display:inline-block;
     top: 360px;
-    left: 463px;
+    left: 433px;
     width: 170px;
     position: absolute; 
     background-color:#5ef65e3b;
@@ -187,3 +188,76 @@ main {
     color: white;
     border-radius: 2px;
 }
+
+.section-skills {
+    position:absolute;
+    display: flex;
+    background-color: var(--cor2);
+    width:100%;
+    height: 798px;
+    margin-top: 810px;
+}
+
+.section-skills h1 {
+    position:relative;
+    top: -350px;
+    left: 400px;
+    text-align: center;
+    font:normal 500 30px 'Press Start 2P';
+    color:var(--cor3);
+    line-height: 30px;
+    width: 500px;
+    padding: 4px;
+    text-shadow: 1.9px 1.9px 0px var(--cor3);
+    margin:auto;
+}
+
+#list-skills {
+    width: 950px;
+    height: 470px;
+    position: relative;
+    top: 160px;
+    right: 400px;
+}
+
+.skiladas {
+    width: 430px;
+    height: 90px;
+    margin-bottom: 38px;
+}
+
+.skiladas img {
+    margin-top: 5px;
+}
+
+#skiladas {
+    font: normal 400 25px 'Press Start 2P';
+    color: white;
+    display: inline-block;
+    position: relative;
+    margin-left: 25px;
+    top: -61px;
+}
+
+span.squilos {
+    display: inline-block;
+    border:5px solid black;
+    position: relative;
+    top: -70px;
+    left: 106px;
+    width:300px;
+    height:40px;
+    background-image: linear-gradient(to right, var(--cor8) 120px, white 30px);
+}
+
+#css {
+    margin-left: 200px;
+    margin-top: 60px;
+    
+}
+
+#js {
+    margin-left: 450px;
+    margin-top: 70px;
+}
+
